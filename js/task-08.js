@@ -10,6 +10,7 @@ function onSubmit(evt) {
 
     const result = {};
     let fillErr = false;
+
     inputArray.forEach((element) => {
         if (element.value == "") { fillErr = true };
         result[element.name] = element.value;
@@ -18,6 +19,7 @@ function onSubmit(evt) {
     if (fillErr) {
         alert("Все поля регистрации должны быть заполнены!");
     } else {
+        submitFrm.reset();
         console.log(result);
     }
 }
