@@ -1,9 +1,4 @@
 const inputEl = document.querySelector("#validation-input");
-//const styleValid = window.getComputedStyle(inputEl, "invalid");
-    //document.querySelector("#validation-input.valid");  
-//const styleInvalid = document.querySelector("#validation-input.invalid");  
-
-//console.log(styleValid);
 
 inputEl.addEventListener("blur", onBlurInput);
 
