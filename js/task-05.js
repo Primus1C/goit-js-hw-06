@@ -1,8 +1,8 @@
 const inputEl = document.querySelector("#name-input");
 const outputEl = document.querySelector("#name-output");
 
-inputEl.addEventListener("keydown", onChangeInput);
+inputEl.addEventListener("input", onChangeInput);
 
 function onChangeInput(evt) {
-    outputEl.textContent = inputEl.value === "" ? "Anonymous" : inputEl.value;
+    outputEl.textContent = evt.currentTarget.value === "" ? "Anonymous" : evt.currentTarget.value;
 }
